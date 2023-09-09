@@ -152,7 +152,7 @@ proxies:
     server: beacon.liveon.id
     port: 443
     type: trojan
-    password: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    password: passwordmu
     sni: nawang.wokszstore.com
     skip-cert-verify: true
     network: ws
@@ -165,7 +165,7 @@ proxies:
     server: beacon.liveon.id
     port: 443
     type: trojan
-    password: 37d11db3-aa6b-44de-a757-82f78635808e
+    password: passwordmu
     sni: yaddykakkoii.sshweb.tech
     skip-cert-verify: true
     network: ws
@@ -178,7 +178,7 @@ proxies:
     server: beacon.liveon.id
     port: 443
     type: trojan
-    password: yadddytampan
+    password: passwordmu
     sni: deciljawir.ganteng.tech
     skip-cert-verify: true
     network: ws
@@ -192,7 +192,7 @@ proxies:
     server: beacon.liveon.id
     port: 443
     type: vmess
-    uuid: 42d8cf9a-49e0-42d6-81fb-beacd0057f9b
+    uuid: passwordmu
     alterId: 0
     cipher: auto
     tls: true
@@ -207,7 +207,7 @@ proxies:
     server: beacon.liveon.id
     port: 443
     type: vmess
-    uuid: 8ae63a1a-d6a4-4328-973a-797bcab07810
+    uuid: passwordmu
     alterId: 0
     cipher: auto
     tls: true
@@ -226,7 +226,7 @@ proxies:
     server: beacon.liveon.id
     type: vmess
     port: 80
-    uuid: 3311d893-72ea-4e02-b64d-71b7aadddf76
+    uuid: passwordmu
     alterId: 0
     cipher: auto
     tls: false
@@ -242,7 +242,7 @@ proxies:
     server: beacon.liveon.id
     type: vmess
     port: 80
-    uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+    uuid: passwordmu
     alterId: 0
     cipher: auto
     tls: false
