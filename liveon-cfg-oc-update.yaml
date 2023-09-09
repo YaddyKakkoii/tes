@@ -1,1 +1,57 @@
+#!/bin/bash
+
+YADDYKAKKOII=MAGELANG_PHREAKER
+KAKKOII=KEREN
+TENSAII=JENIUS
+SUGOII=HEBAT
+KAWAII=IMUT
+KIREII=CANTIK
+WATASHI=SAYA
+SAYA=KULO
+KULO=ABDI
+ABDI=AING
+ANATA=ANDA
+ANDA=KAMU
+KAMU=KOWE
+KOWE=KOEN
+KOEN=AWAKMU
+AWAKMU=SLIRAMU
+NOMERR=999
+
+function update_config_yaml(){
+
+cd /root
+rm -f /etc/openclash/config/anyar.yaml > /dev/null 2>&1
+
+mkdir -p /etc/openclash/rule_provider
+
+wget -O /etc/openclash/config/anyar.yaml "https://raw.githubusercontent.com/YaddyKakkoii/tes/main/anyar.yaml"
+
+chmod 777 /etc/openclash/config/anyar.yaml
+
+cd /etc/openclash/rule_provider
+
+rm banking.yaml > /dev/null 2>&1
+rm gametcp.yaml > /dev/null 2>&1
+rm gaming.yaml > /dev/null 2>&1
+rm portgames.yaml > /dev/null 2>&1
+
+wget https://raw.githubusercontent.com/YaddyKakkoii/tes/main/portgames.yaml
+wget https://raw.githubusercontent.com/YaddyKakkoii/tes/main/banking.yaml
+wget https://raw.githubusercontent.com/YaddyKakkoii/tes/main/gametcp.yaml
+wget https://raw.githubusercontent.com/YaddyKakkoii/tes/main/gaming.yaml
+
+chmod 777 *
+ls -la
+
+cd /root
+echo "berhasil mengupdate config silakan buka openclash dan cari config bernama anyar.yaml ,lalu klik tombol SWITCH CONFIG"
+
+}
+
+update_config_yaml
+
+sleep 5
+
+echo " Created by $YADDYKAKKOII ${NOMERR} "
 
