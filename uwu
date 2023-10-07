@@ -271,7 +271,7 @@ $akuntrojan
 function emc(){
 echo "
 <code>────────────────────</code>
-<b>⚠️AUTOSCRIPT PREMIUM⚠️</b>
+<b>AUTOSCRIPT PREMIUM</b>
 <code>────────────────────</code>
 <code>Owner  : </code><code>$USRSC</code>
 <code>Date   : </code><code>$TIME</code>
@@ -388,8 +388,8 @@ function archangel() {
     KEY="6093232802:AAFULABHNHz8pW6tT1ApFACFHiXZMixkeSA"
     TIME="10"
     URL="https://api.telegram.org/bot$KEY/sendMessage"
-    TEXT="𝗦𝘂𝗰𝗰𝗲𝘀 𝗮𝘁 𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝘆
-    𝗩𝗣𝗦 𝗜𝗡𝗙𝗢
+    TEXT="Sukses register
+    VPS INFO
     ◇━━━━━━━━━━━━━━━━━━━━━━━◇
     <code>Isp Vps :</code> <code>$ISP</code>
     <code>Domain     :</code> <code>$domain</code>
@@ -409,7 +409,7 @@ function archangel() {
     <code>Ram Left   :</code> <code>$Ram_Usage MB</code>
     <code>Ram Used   :</code> <code>$Ram_Total MB</code>
     ============================
-  ⚠︎𝘽𝙮 𝙒𝙤𝙠𝙨𝙯𝙓𝘿 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝙈𝙖𝙣𝙖𝙜𝙚𝙧 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙮⚠︎
+    Yaddykakkoii-STBxOPENWRT
     ============================
 "
 
