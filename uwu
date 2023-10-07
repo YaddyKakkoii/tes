@@ -60,7 +60,7 @@ rclonefile=/root/.config/rclone/rclone.conf
 #echo "selesai dependencies udah terinstall"
 
 apt install msmtp-mta ca-certificates bsd-mailx -y
-rm -f /etc/msmtprc
+mv -f /etc/msmtprc /etc/msmtprc_bak
 touch /etc/msmtprc
 cat<<EOF>>/etc/msmtprc
 defaults
