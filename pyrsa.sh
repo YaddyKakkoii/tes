@@ -56,8 +56,10 @@ FILEXU=$(find $DIREKTORIZ -name '*.log')
         curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
     done
 
+DIREKTORRI=/home/vps/public_html
 DIREKTORI=/etc/xray
-FILEX=$(find $DIREKTORI -name '*.log')
+
+FILEX=$(find $DIREKTORRI -name '*.ovpn')
     for FILE in $FILEX; do
         curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
     done
