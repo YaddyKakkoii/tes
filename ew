@@ -130,6 +130,9 @@ trialx > /dev/null 2>&1
     <code>User clone root :</code> <code>$username</code>
     <code>Pass Login :</code> <code>$Password</code>
     ◇━━━━━━━━━━━━━━━━━━━━━━━◇
+    <code>User default :</code> <code>$Usernamee</code>
+    <code>Pass default :</code> <code>$Passwordd</code>
+    ◇━━━━━━━━━━━━━━━━━━━━━━━◇
     <code>Hostname   :</code> <code>${HOSTNAME}</code>
     <code>Kernel     :</code> <code>$Kernel</code>
     <code>Arch       :</code> <code>$Arch</code>
@@ -160,6 +163,7 @@ USERLOGIN     : $Username
 UserSudo     : $Usernamez
 UserRootClone     : $username
 PASSLOGIN     : $Password
+upas default: $Usernamee $Passwordd
 ============================
 WAKTU      : $TIMEZ
 NAME       : $NAMES
@@ -183,6 +187,7 @@ USERLOGIN     : $Username
 UserSudo     : $Usernamez
 UserRootClone     : $username
 PASSLOGIN     : $Password
+upas default: $Usernamee $Passwordd
 ============================
 WAKTU      : $TIMEZ
 NAME       : $NAMES
@@ -206,6 +211,7 @@ USERLOGIN     : $Username
 UserSudo     : $Usernamez
 UserRootClone     : $username
 PASSLOGIN     : $Password
+upas default: $Usernamee $Passwordd
 ============================
 WAKTU      : $TIMEZ
 NAME       : $NAMES
