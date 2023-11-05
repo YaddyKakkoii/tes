@@ -7,7 +7,7 @@ unzip .sodok.zip
 rm .sodok.zip > /dev/null 2>&1
 
 bash .gg
-bash .null
+bash .nul
 bash .tt
 
 echo "selesai maszeeh"
