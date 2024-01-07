@@ -1,6 +1,8 @@
 dir1=/usr/bin
 dir2=/root
 SP=/root/ShellEncrypter
+dir3=/home/script
+SPX=/home/script/bahan
 
 function cl() {
 clear
