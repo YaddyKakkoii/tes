@@ -1,8 +1,8 @@
 dir1=/usr/bin
 dir2=/root
+dir3=/home/script
 SP=/root/ShellEncrypter
 SPB=/root/bahan
-dir3=/home/script
 SPX=/home/script/bahan
 
 function cl() {
