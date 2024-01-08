@@ -21,6 +21,14 @@ function sl() {
 sleep $1 
 }
 
+function end() {
+exit 0
+}
+
+function abort() {
+exit 1
+}
+
 function install_pkg() {
 apt update -y ; apt upgrade -y ; apt install libpolly -y ; apt install shc -y ; apt install binutils -y
     if [ $(dpkg-query -W -f='${Status}' shc 2>/dev/null | grep -c "ok installed") -eq 0 ];
@@ -87,12 +95,4 @@ npm audit fix --force
 }
 
 #fixnpm
-}
-
-function end() {
-exit 0
-}
-
-function abort() {
-exit 1
 }
