@@ -1,7 +1,6 @@
 dir1=/usr/bin
 dir2=/root
 dir3=/home/script
-SP=/root/ShellEncrypter
 SPB=/root/bahan
 SPX=/home/script/bahan
 
